@@ -12,9 +12,9 @@ def writetxt(f):
 for f in files:
     fullpath = os.path.join(path, f)
     if os.path.isfile(fullpath):
-        if f == "CurrentPathNameList.py":
+        if f == "List.txt":
             pass
-        elif f == "List.txt":
+        elif f == "CurrentPathNameList.py":
             pass
         else:
             writetxt(f)
