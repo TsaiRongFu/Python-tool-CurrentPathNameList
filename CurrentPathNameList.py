@@ -10,7 +10,7 @@ def writetxt(f):
     WriteFile.close()
 
 for f in files:
-    fullpath = os.path.join(path, f)
+    fullpath = os.path.join(path, f)    
     if os.path.isfile(fullpath):
         if f == "List.txt":
             pass
@@ -20,4 +20,6 @@ for f in files:
             writetxt(f)
     elif os.path.isdir(fullpath):
         pass
-
+#  Rename
+#  new_fname = "NewName"
+#  os.rename(os.path.join(path, f), os.path.join(path, new_fname))
