@@ -4,7 +4,7 @@ path = "./"
 files = os.listdir(path)
 
 def writetxt(f):
-    WriteFile = open("List.txt",'a',encoding="utf-8")
+    WriteFile = open("List.txt", 'a', encoding="utf-8")
     WriteFile.write(f)
     WriteFile.write('\n')
     WriteFile.close()
