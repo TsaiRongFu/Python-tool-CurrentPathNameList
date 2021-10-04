@@ -4,7 +4,7 @@ path = "./"
 files = os.listdir(path)
 
 def writetxt(f):
-    WriteFile = open("List.txt", 'a', encoding="utf-8")
+    WriteFile = open("List.txt", 'w+', encoding='utf-8')
     WriteFile.write(f)
     WriteFile.write('\n')
     WriteFile.close()
@@ -20,6 +20,3 @@ for f in files:
             writetxt(f)
     elif os.path.isdir(fullpath):
         pass
-#  Rename
-#  new_fname = "NewName"
-#  os.rename(os.path.join(path, f), os.path.join(path, new_fname))
